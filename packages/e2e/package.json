@@ -1,0 +1,27 @@
+{
+  "name": "@dblechoc/e2e",
+  "private": true,
+  "version": "0.0.0",
+  "engines": {
+    "node": "8.x.x"
+  },
+  "scripts": {
+    "start": "yarn --cwd ../../ now-lambda"
+  },
+  "devDependencies": {
+    "jest": "24.5.0",
+    "jest-puppeteer": "4.1.0",
+    "puppeteer": "1.14.0"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testRegex": "/__tests__/.*\\.(js|jsx)$"
+  }
+}

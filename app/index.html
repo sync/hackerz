@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#673ab8" />
+    <meta name="Description" content="Some sort of description here." />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>Hackerz</title>
+    <style type="text/css">
+      :root {
+        --primary: #03a9f4;
+      }
+
+      * {
+        box-sizing: border-box !important;
+      }
+
+      html {
+        font-size: 10px;
+      }
+
+      body {
+        font-size: 1.6rem;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, segoeUI,
+          Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+    <link rel="stylesheet" href="./client.css" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./client.js"></script>
+    <script nomodule src="./legacy-client.js"></script>
+  </body>
+</html>
