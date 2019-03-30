@@ -1,0 +1,28 @@
+{
+  "name": "pennyworth",
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
+  "ppx-flags": ["let-anything/ppx"],
+  "namespace": true,
+  "bs-dependencies": [
+    "reason-graphql",
+    "reason-future",
+    "@glennsl/bs-json",
+    "bs-fetch"
+  ],
+  "sources": [
+    {
+      "dir": "packages/api",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "warnings": {
+    "number": "-45-44",
+    "error": "+101"
+  },
+  "refmt": 3
+}

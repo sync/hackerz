@@ -3,5 +3,10 @@ node_modules
 .cache
 coverage
 .DS_Store
+.merlin
+/lib/*
+!/lib/js/*
+/bundledOutputs/
+.bsb.lock
 workflows
 .github
