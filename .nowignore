@@ -8,5 +8,6 @@ coverage
 !/lib/js/*
 /bundledOutputs/
 .bsb.lock
+.graphql_ppx_cache
 workflows
 .github

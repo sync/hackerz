@@ -1,15 +1,28 @@
 {
-  "name": "pennyworth",
+  "name": "hackerz",
   "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
-  "ppx-flags": ["let-anything/ppx"],
+  "ppx-flags": [
+    "./node_modules/.bin/reactjs_jsx_ppx_v3.exe",
+    "graphql_ppx/ppx",
+    "let-anything/ppx"
+  ],
   "namespace": true,
   "bs-dependencies": [
+    "reason-react",
     "reason-graphql",
     "reason-future",
     "@glennsl/bs-json",
     "bs-fetch"
   ],
   "sources": [
+    {
+      "dir": "app",
+      "subdirs": true
+    },
+    {
+      "dir": "server",
+      "subdirs": true
+    },
     {
       "dir": "packages/api",
       "subdirs": true

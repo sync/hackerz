@@ -1,0 +1,150 @@
+{
+  "data": {
+    "__schema": {
+      "directives": [],
+      "types": [
+        {
+          "possibleTypes": null,
+          "enumValues": null,
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "description": null,
+          "name": "Int",
+          "kind": "SCALAR"
+        },
+        {
+          "possibleTypes": null,
+          "enumValues": null,
+          "interfaces": null,
+          "inputFields": null,
+          "fields": null,
+          "description": null,
+          "name": "String",
+          "kind": "SCALAR"
+        },
+        {
+          "possibleTypes": null,
+          "enumValues": null,
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "deprecationReason": null,
+              "isDeprecated": false,
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "Int",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "args": [],
+              "description": null,
+              "name": "id"
+            },
+            {
+              "deprecationReason": null,
+              "isDeprecated": false,
+              "type": {
+                "ofType": {
+                  "ofType": null,
+                  "name": "String",
+                  "kind": "SCALAR"
+                },
+                "name": null,
+                "kind": "NON_NULL"
+              },
+              "args": [],
+              "description": null,
+              "name": "title"
+            }
+          ],
+          "description": null,
+          "name": "story",
+          "kind": "OBJECT"
+        },
+        {
+          "possibleTypes": null,
+          "enumValues": null,
+          "interfaces": [],
+          "inputFields": null,
+          "fields": [
+            {
+              "deprecationReason": null,
+              "isDeprecated": false,
+              "type": {
+                "ofType": null,
+                "name": "story",
+                "kind": "OBJECT"
+              },
+              "args": [
+                {
+                  "defaultValue": null,
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "Int",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "description": null,
+                  "name": "id"
+                }
+              ],
+              "description": null,
+              "name": "story"
+            },
+            {
+              "deprecationReason": null,
+              "isDeprecated": false,
+              "type": {
+                "ofType": {
+                  "ofType": {
+                    "ofType": null,
+                    "name": "story",
+                    "kind": "OBJECT"
+                  },
+                  "name": null,
+                  "kind": "NON_NULL"
+                },
+                "name": null,
+                "kind": "LIST"
+              },
+              "args": [
+                {
+                  "defaultValue": null,
+                  "type": {
+                    "ofType": {
+                      "ofType": null,
+                      "name": "Int",
+                      "kind": "SCALAR"
+                    },
+                    "name": null,
+                    "kind": "NON_NULL"
+                  },
+                  "description": null,
+                  "name": "page"
+                }
+              ],
+              "description": null,
+              "name": "topStories"
+            }
+          ],
+          "description": null,
+          "name": "Query",
+          "kind": "OBJECT"
+        }
+      ],
+      "subscriptionType": null,
+      "mutationType": null,
+      "queryType": {
+        "name": "Query"
+      }
+    }
+  }
+}

@@ -22,6 +22,10 @@
       "src": "/api/graphql",
       "dest": "/packages/api/index.js"
     },
+    {
+      "src": "^/more",
+      "dest": "/server/index.js?path=more"
+    },
     { "src": "^/(.*)", "dest": "/server/index.js" }
   ]
 }
