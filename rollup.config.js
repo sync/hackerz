@@ -9,6 +9,7 @@ import livereload from 'rollup-plugin-livereload';
 import copy from 'rollup-plugin-copy-assets';
 import postcss from 'rollup-plugin-postcss';
 import workbox from 'rollup-plugin-workbox-build';
+import json from 'rollup-plugin-json';
 const pkg = require('./package.json');
 
 const namedExports = {
@@ -199,6 +200,70 @@ const ssrMiddleware = {
   ],
 };
 
+// for the api
+const api = {
+  input: 'packages/api/server.bs.js',
+  output: {
+    dir: pkg.config.publicDir,
+    format: 'cjs',
+    entryFileNames: 'api.js',
+    name: 'api',
+    sourcemap: true,
+  },
+  external: [
+    'events',
+    'zlib',
+    'http',
+    'path',
+    'net',
+    'fs',
+    'querystring',
+    'url',
+    'buffer',
+    'crypto',
+    'stream',
+    'util',
+    'tty',
+  ],
+  plugins: [
+    progress(),
+    nodeResolve({ preferBuiltins: false }),
+    commonjs({
+      include: ['node_modules/**'],
+      namedExports,
+    }),
+    babel({
+      babelrc: false,
+      exclude: [/core-js/, /regenerator-runtime/],
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            modules: false,
+            targets: { node: 'current' },
+            useBuiltIns: 'usage',
+            corejs: 3,
+            loose: true,
+          },
+        ],
+      ],
+    }),
+    json({
+      include: 'node_modules/**',
+      preferConst: true,
+      compact: true,
+      namedExports: true,
+    }),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify(
+        production ? 'production' : 'development',
+      ),
+    }),
+    production && filesize(),
+    production && terser(), // minify, but only in production
+  ],
+};
+
 export default (production
-  ? [client, legacyClient, ssrMiddleware]
-  : [client, ssrMiddleware]);
+  ? [client, legacyClient, ssrMiddleware, api]
+  : [client, ssrMiddleware, api]);

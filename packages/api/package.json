@@ -1,0 +1,20 @@
+{
+  "name": "@dblechoc/api",
+  "private": true,
+  "version": "0.0.0",
+  "engines": {
+    "node": "8.x.x"
+  },
+  "scripts": {
+    "dev": "micro-dev devServer.js"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4"
+  },
+  "devDependencies": {
+    "esm": "3.2.22",
+    "micro": "9.3.3",
+    "micro-dev": "3.0.0"
+  }
+}

@@ -18,6 +18,10 @@
       "src": "^/(.*)\\.(js|css|json|css.map|js.map|ico|webmanifest|png|txt)$",
       "dest": "/dist/$1.$2"
     },
+    {
+      "src": "/api/graphql",
+      "dest": "/packages/api/index.js"
+    },
     { "src": "^/(.*)", "dest": "/server/index.js" }
   ]
 }

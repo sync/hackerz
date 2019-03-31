@@ -13,16 +13,22 @@
     "publicDir": "dist"
   },
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && bsb -clean-world",
     "dev": "run-p -c dev:*",
+    "dev:reason": "bsb -make-world -w",
     "dev:rollup": "cross-env NODE_ENV=development rollup -c -w",
     "dev:server": "now-lambda",
+    "dev-graphql": "run-p -c dev-graphql:*",
+    "dev-graphql:reason": "bsb -make-world -w",
+    "dev-graphql:api": "yarn --cwd packages/api dev",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,html,graphql}\"",
-    "build": "yarn clean && yarn create-bundles",
+    "build": "yarn clean && yarn build:reason && yarn create-bundles",
+    "build:reason": "bsb -make-world",
     "create-bundles": "cross-env NODE_ENV=production rollup -c",
     "start": "yarn build && now-lambda",
-    "test": "jest --config jest.json",
+    "test": "yarn build:reason && jest --config jest.json",
     "test-watch": "run-p -c test-watch:*",
+    "test-watch:reason": "yarn dev:reason",
     "test-watch:jest": "jest --config jest.json --watch",
     "lint": "run-p -c lint:*",
     "lint:css": "stylelint '**/*.css'",
@@ -35,10 +41,15 @@
     "e2e": "yarn e2e-build && yarn --cwd packages/e2e jest"
   },
   "dependencies": {
+    "@glennsl/bs-json": "3.0.0",
+    "bs-fetch": "0.3.1",
     "core-js": "3.0.0",
     "isomorphic-fetch": "2.2.1",
+    "let-anything": "1.0.3",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "reason-future": "2.4.0",
+    "reason-graphql": "git://github.com/sync/reason-graphql.git#hack/subs"
   },
   "devDependencies": {
     "@babel/core": "7.4.0",
@@ -47,6 +58,7 @@
     "@babel/preset-react": "7.0.0",
     "autoprefixer": "9.5.0",
     "babel-jest": "24.5.0",
+    "bs-platform": "5.0.0",
     "cross-env": "5.2.0",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.1.0",
@@ -71,6 +83,7 @@
     "rollup-plugin-commonjs": "9.2.2",
     "rollup-plugin-copy-assets": "1.1.0",
     "rollup-plugin-filesize": "6.0.1",
+    "rollup-plugin-json": "4.0.0",
     "rollup-plugin-livereload": "1.0.0",
     "rollup-plugin-node-resolve": "4.0.1",
     "rollup-plugin-postcss": "2.0.3",
@@ -83,6 +96,7 @@
     "stylelint-config-standard": "18.2.0"
   },
   "resolutions": {
+    "bs-platform": "5.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },

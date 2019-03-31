@@ -4,4 +4,10 @@ node_modules
 dist
 coverage
 .DS_Store
-lib
+
+.merlin
+/lib/*
+!/lib/js/*
+/bundledOutputs/
+.bsb.lock
+
