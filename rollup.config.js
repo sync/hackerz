@@ -45,7 +45,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 // Module config for <script type="module">
 const client = {
-  input: 'app/client.js',
+  input: 'app/client.bs.js',
   output: {
     dir: pkg.config.publicDir,
     format: 'esm',
@@ -100,7 +100,7 @@ const client = {
 };
 
 const legacyClient = {
-  input: 'app/client.js',
+  input: 'app/client.bs.js',
   output: {
     dir: pkg.config.publicDir,
     format: 'iife',

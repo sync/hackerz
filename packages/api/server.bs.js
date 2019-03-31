@@ -9,8 +9,8 @@ import * as Belt_Result from "bs-platform/lib/es6/belt_Result.js";
 import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
 import * as BodyParser from "body-parser";
 import * as GraphqlFuture from "reason-graphql/src/variations/GraphqlFuture.bs.js";
+import * as GraphqlSchema$Hackerz from "./GraphqlSchema.bs.js";
 import * as Graphql_Language_Parser from "reason-graphql/src/language/Graphql_Language_Parser.bs.js";
-import * as GraphqlSchema$Pennyworth from "./GraphqlSchema.bs.js";
 
 var app = Express.default();
 
@@ -25,7 +25,7 @@ function getQueryString(json) {
 }
 
 function executeGraphqlQuery(query) {
-  return Curry._1(GraphqlFuture.Schema[/* resultToJson */45], Curry._4(GraphqlFuture.Schema[/* execute */44], undefined, Belt_Result.getExn(Graphql_Language_Parser.parse(query)), GraphqlSchema$Pennyworth.schema, /* () */0));
+  return Curry._1(GraphqlFuture.Schema[/* resultToJson */45], Curry._4(GraphqlFuture.Schema[/* execute */44], undefined, Belt_Result.getExn(Graphql_Language_Parser.parse(query)), GraphqlSchema$Hackerz.schema, /* () */0));
 }
 
 function graphqlHandler(req, res) {
@@ -46,7 +46,7 @@ app.get("*", graphqlHandler);
 
 app.post("*", graphqlHandler);
 
-var schema = GraphqlSchema$Pennyworth.schema;
+var schema = GraphqlSchema$Hackerz.schema;
 
 var $$default = app;
 
