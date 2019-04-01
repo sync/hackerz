@@ -5957,10 +5957,10 @@ now-lambda-runner@3.3.0:
     named-regexp-groups "^1.0.3"
     yargs "12.0.5"
 
-now@14.3.0-canary.24:
-  version "14.3.0-canary.24"
-  resolved "https://registry.yarnpkg.com/now/-/now-14.3.0-canary.24.tgz#5aadc2d0f65e465d305b632142b64ddf61df6d0b"
-  integrity sha512-etDl1ay8i1WAHUVEkM0PI++RUBOvMoWYfl4iGpMcma8zG2qtrfR/Kf/1iBwFfi0wIA6Jrs1wBRiFfiPF6pOJ5A==
+now@14.3.0-canary.26:
+  version "14.3.0-canary.26"
+  resolved "https://registry.yarnpkg.com/now/-/now-14.3.0-canary.26.tgz#ab2c86da4a0f7f370477cbd7df24210bb1367cf3"
+  integrity sha512-LwkO7tAAhQGoHrrQcl/K/HHnHDoEu/y7dulk4KR+KazU6dg1top1ZExTqlg5gPxz5j8Nq4kF5GMzOA22hFmgXA==
 
 npm-bundled@^1.0.1:
   version "1.0.6"
