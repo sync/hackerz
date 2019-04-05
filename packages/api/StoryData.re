@@ -9,7 +9,7 @@ let storyUrl = id => {j|$apiBaseUrl/v0/item/$id.json|j};
 
 type story = {
   by: string,
-  descendants: int,
+  descendants: option(int),
   id: int,
   score: int,
   time: int,
@@ -24,7 +24,7 @@ module Decode = {
   let story = (json): story =>
     Json.Decode.{
       by: json |> field("by", string),
-      descendants: json |> field("descendants", int),
+      descendants: json |> optional(field("descendants", int)),
       id: json |> field("id", int),
       score: json |> field("score", int),
       time: json |> field("time", int),
