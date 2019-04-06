@@ -1,39 +1,32 @@
 import React from 'react';
-import { render, fireEvent } from 'react-testing-library';
+import { render, fireEvent, waitForElement } from 'react-testing-library';
 import { make as App } from '../app/App.bs';
-import { GraphQLClient } from 'graphql-hooks';
+import { mockFetchTopStoriesOnce } from './utils/fetchMocks';
+import client from './utils/graphQLClient';
 
 describe('Initial Test of the App', () => {
-  let client;
+  let topStories;
 
   beforeEach(() => {
-    client = new GraphQLClient({ url: '/api/graphql' });
-    client.request = jest.fn().mockResolvedValue({
-      data: {
-        topStories: [
-          {
-            title:
-              'Scientists discover the chemicals behind the unique Parkinson’s smell',
-            id: 19528250,
-          },
-          {
-            title: 'The Day the Dinosaurs Died',
-            id: 19526679,
-          },
-        ],
-      },
-    });
+    topStories = mockFetchTopStoriesOnce();
   });
 
-  test('To render home page', () => {
+  afterEach(() => {
+    fetch.resetMocks();
+  });
+
+  test('To render home page', async () => {
     const { getByText } = render(<App client={client} />);
 
     expect(getByText('HELLO')).toBeTruthy();
+
+    await waitForElement(() => getByText(topStories[0].title));
+    await waitForElement(() => getByText(topStories[1].title));
 
     const link = getByText('See some more');
     expect(link).toBeTruthy();
 
     fireEvent.click(link);
-    expect(getByText('More')).toBeTruthy();
+    await waitForElement(() => getByText('More'));
   });
 });

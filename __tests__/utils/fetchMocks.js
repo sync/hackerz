@@ -1,12 +1,22 @@
-import topStories from '../fixtures/topStories';
-
-export function mockFetchTopStoriesOnce(delay = 0) {
+export function mockFetchTopStoriesOnce(
+  delay = 0,
+  topStories = require('../fixtures/topStories').default,
+) {
   fetch.mockResponseOnce(
-    JSON.stringify({
-      data: {
-        topStories,
-      },
-    }),
+    () =>
+      new Promise(resolve =>
+        setTimeout(
+          () =>
+            resolve({
+              body: JSON.stringify({
+                data: {
+                  topStories,
+                },
+              }),
+            }),
+          delay,
+        ),
+      ),
   );
 
   return topStories;
