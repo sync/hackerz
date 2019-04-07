@@ -60,7 +60,7 @@
     "@babel/polyfill": "7.4.3",
     "@babel/preset-env": "7.4.3",
     "@babel/preset-react": "7.0.0",
-    "autoprefixer": "9.5.0",
+    "autoprefixer": "9.5.1",
     "babel-jest": "24.7.1",
     "bs-platform": "5.0.0",
     "cross-env": "5.2.0",
