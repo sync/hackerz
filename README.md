@@ -4,6 +4,8 @@
 
 Ultra high performance progressive web application built with React + Reason (hooks, react ppx 3), GraphQL (api and client) and rollup.
 
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io)
+
 ## Features
 
 - Progressive web app
@@ -72,6 +74,16 @@ The end to end test go fetch latest news from the server and expect it to be fou
 ```sh
 $ yarn e2e
 ```
+
+## Storybook
+
+This is where we list all our components (comes with hot reloading)
+
+```sh
+$ yarn storybook
+```
+
+After doing this, you'll have a showcase page running at [http://localhost:6006](http://localhost:6006)
 
 ## CI
 

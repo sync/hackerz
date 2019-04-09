@@ -9,5 +9,6 @@ coverage
 /bundledOutputs/
 .bsb.lock
 .graphql_ppx_cache
+storybook-static
 workflows
 .github

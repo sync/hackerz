@@ -19,6 +19,13 @@ action "Test" {
   args = "ci"
 }
 
+action "Snapshot UI" {
+  uses = "./workflows/action-puppeteer/"
+  needs = ["Test"]
+  args = "snapshot-ui"
+  secrets = ["PERCY_TOKEN"]
+}
+
 action "End to End" {
   uses = "./workflows/action-puppeteer/"
   needs = ["Test"]
@@ -27,7 +34,7 @@ action "End to End" {
 
 action "Deploy" {
   uses = "./workflows/action-puppeteer/"
-  needs = ["End to End"]
+  needs = ["End to End", "Snapshot UI"]
   args = "ci:deploy"
   secrets = ["NOW_TOKEN"]
 }
