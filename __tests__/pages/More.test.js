@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render } from '../utils/testUtils';
 import { make as More } from '../../app/pages/More.bs';
 
 describe('More', () => {

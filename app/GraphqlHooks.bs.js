@@ -32,12 +32,28 @@ function useQuery(query) {
   var match = result.loading;
   var match$1 = result.error;
   var match$2 = result.data;
+  var match$3 = result.fetchError;
+  var match$4 = result.httpError;
   if (match) {
     return /* Loading */0;
-  } else if (match$1 || match$2 === undefined) {
-    return /* Error */Block.__(0, ["something is wrong"]);
-  } else {
+  } else if (match$1) {
+    if (match$2 !== undefined) {
+      return /* Error */Block.__(0, ["Something went wrong"]);
+    } else if (match$3 !== undefined) {
+      if (match$4 !== undefined) {
+        return /* Error */Block.__(0, ["Something went wrong"]);
+      } else {
+        return /* Error */Block.__(0, [Caml_option.valFromOption(match$3).message]);
+      }
+    } else if (match$4 !== undefined) {
+      return /* Error */Block.__(0, [Caml_option.valFromOption(match$4).body]);
+    } else {
+      return /* Error */Block.__(0, ["Something went wrong"]);
+    }
+  } else if (match$2 !== undefined) {
     return /* Data */Block.__(1, [Curry._1(query.parse, Caml_option.valFromOption(match$2))]);
+  } else {
+    return /* Error */Block.__(0, ["Something went wrong"]);
   }
 }
 

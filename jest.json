@@ -1,5 +1,6 @@
 {
   "roots": ["<rootDir>/__tests__"],
+  "setupFiles": ["<rootDir>/jest/setup.js"],
   "setupFilesAfterEnv": [
     "jest-dom/extend-expect",
     "react-testing-library/cleanup-after-each"
@@ -14,6 +15,7 @@
     "^.+\\.jsx?$": "babel-jest",
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest/fileTransformer.js"
   },
+  "testRegex": "__tests__/.*.test.js$",
   "transformIgnorePatterns": ["node_modules/(?!(bs-platform|reason-react)/)"],
   "testPathIgnorePatterns": [
     "<rootDir>/dist/",

@@ -45,11 +45,23 @@ module Provider = {
 };
 
 [@bs.deriving abstract]
+type error = {message: string};
+
+[@bs.deriving abstract]
+type httpError = {
+  status: int,
+  statusText: string,
+  body: string,
+};
+
+[@bs.deriving abstract]
 type clientRequestResult('any) = {
   loading: bool,
   cacheHit: bool,
   error: bool,
   data: 'any,
+  fetchError: option(error),
+  httpError: option(httpError),
 };
 
 type queryResponse('a) =
@@ -62,9 +74,18 @@ external _useQuery: string => clientRequestResult('any) = "useQuery";
 
 let useQuery = (~query) => {
   let result = _useQuery(query##query);
-  switch (result->loadingGet, result->errorGet, result->dataGet) {
-  | (true, _, _) => Loading
-  | (false, false, Some(response)) => Data(response |> query##parse)
-  | _ => Error("something is wrong")
+  switch (
+    result->loadingGet,
+    result->errorGet,
+    result->dataGet,
+    result->fetchErrorGet,
+    result->httpErrorGet,
+  ) {
+  | (true, _, _, _, _) => Loading
+  | (false, false, Some(response), _, _) => Data(response |> query##parse)
+  | (false, true, None, Some(fetchError), None) =>
+    Error(fetchError->messageGet)
+  | (false, true, None, None, Some(httpError)) => Error(httpError->bodyGet)
+  | _ => Error("Something went wrong")
   };
 };
