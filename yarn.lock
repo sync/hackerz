@@ -3811,10 +3811,10 @@ graphql-hooks-memcache@1.2.0:
     "@sindresorhus/fnv1a" "^1.0.0"
     tiny-lru "^6.0.1"
 
-graphql-hooks@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-3.4.1.tgz#1254c9bdfe7fa2929cb4fc7488b502c1bcf88b13"
-  integrity sha512-bFpt0dQ+6t3p6UOcWtXASJWxg2gfnXo6JN5jAL7P/3GCcrhgiJ1sNRLQzTUd7HViPXL5QkIBCyTExos1pDjLqA==
+graphql-hooks@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-3.4.2.tgz#38bdd393dce89770e67de487cd8db688bc315429"
+  integrity sha512-WblsC3TP6gWLEGYGUr51VZngbjmjVN5bGJdvxFn0QzNOD2dqB5M+ibstmfc6ioRcU1f75DKhKmnuU31TRuk9EA==
 
 graphql-request@1.8.2:
   version "1.8.2"
