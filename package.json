@@ -22,7 +22,6 @@
     "dev-graphql:reason": "bsb -make-world -w",
     "dev-graphql:api": "yarn --cwd packages/api dev",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,html,graphql}\"",
-    "pre-build": "cd node_modules/reason-react && npx esy install && npx esy build",
     "build": "yarn clean && yarn build:reason && yarn create-bundles",
     "build:reason": "bsb -make-world",
     "create-bundles": "cross-env NODE_ENV=production rollup -c",
@@ -34,16 +33,15 @@
     "lint": "run-p -c lint:*",
     "lint:css": "stylelint '**/*.css'",
     "lint:ts": "eslint '**/*.js{,x}'",
-    "ci": "yarn pre-build && yarn build && yarn lint && yarn test",
+    "ci": "yarn lint && yarn test",
+    "deploy": "scripts/deploy-ci.sh",
     "deploy:production": "now --token $NOW_TOKEN --target production",
     "deploy:staging": "now --token $NOW_TOKEN --target staging",
-    "ci:deploy": "scripts/deploy-ci.sh",
-    "e2e-build": "yarn pre-build && yarn build",
-    "e2e": "yarn e2e-build && yarn --cwd packages/e2e jest",
+    "e2e": "yarn build && yarn --cwd packages/e2e jest",
     "storybook": "run-p -c storybook:*",
     "storybook:reason": "yarn dev:reason",
     "storybook:start": "start-storybook -p 6006",
-    "build-storybook": "yarn pre-build && yarn build:reason && build-storybook",
+    "build-storybook": "yarn build:reason && build-storybook",
     "snapshot-ui": "build-storybook && percy-storybook --widths=320,1280"
   },
   "dependencies": {
@@ -58,7 +56,7 @@
     "react-dom": "16.9.0-alpha.0",
     "reason-future": "2.4.0",
     "reason-graphql": "git://github.com/sync/reason-graphql.git#hack/subs",
-    "reason-react": "git://github.com/reasonml/reason-react.git"
+    "reason-react": "0.7.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",

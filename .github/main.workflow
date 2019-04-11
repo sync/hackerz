@@ -35,6 +35,6 @@ action "End to End" {
 action "Deploy" {
   uses = "./workflows/action-puppeteer/"
   needs = ["End to End", "Snapshot UI"]
-  args = "ci:deploy"
+  args = "deploy"
   secrets = ["NOW_TOKEN"]
 }

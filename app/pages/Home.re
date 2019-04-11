@@ -1,5 +1,3 @@
-[@bs.config {jsx: 3}];
-
 type css = {. "foo": string};
 [@bs.module] external css: css = "./Home.css";
 
