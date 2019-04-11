@@ -1,11 +1,10 @@
 {
   "name": "hackerz",
+  "reason": {
+    "react-jsx": 3
+  },
   "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
-  "ppx-flags": [
-    "./node_modules/.bin/reactjs_jsx_ppx_v3.exe",
-    "graphql_ppx/ppx",
-    "let-anything/ppx"
-  ],
+  "ppx-flags": ["graphql_ppx/ppx", "let-anything/ppx"],
   "namespace": true,
   "bs-dependencies": [
     "reason-react",

@@ -1,5 +1,3 @@
-[@bs.config {jsx: 3}];
-
 [@bs.module "./registerServiceWorker"]
 external registerServiceWorker: unit => unit = "register";
 
