@@ -37,8 +37,6 @@ const namedExports = {
   'node_modules/body-parser/index.js': ['json'],
 };
 
-const external = ['fs', 'stream'];
-
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
@@ -49,7 +47,7 @@ const client = {
   output: {
     dir: pkg.config.publicDir,
     format: 'esm',
-    entryFileNames: 'client.js',
+    entryFileNames: production ? 'client-[hash].js' : 'client.js',
     name: 'client',
     sourcemap: true,
   },
@@ -104,7 +102,7 @@ const legacyClient = {
   output: {
     dir: pkg.config.publicDir,
     format: 'iife',
-    entryFileNames: 'legacy-client.js',
+    entryFileNames: production ? 'legacy-client-[hash].js' : 'legacy-client.js',
     name: 'legacy_client',
     sourcemap: true,
   },
@@ -158,7 +156,20 @@ const ssrMiddleware = {
     name: 'ssr-middleware',
     sourcemap: true,
   },
-  external,
+  external: [
+    'fs',
+    'stream',
+    'events',
+    'assert',
+    'util',
+    'url',
+    'buffer',
+    'string_decoder',
+    'path',
+    'zlib',
+    'http',
+    'https',
+  ],
   plugins: [
     progress(),
     nodeResolve(),
@@ -187,6 +198,12 @@ const ssrMiddleware = {
       inject: false,
       extract: true,
       modules: true,
+      namedExports: true,
+    }),
+    json({
+      include: 'node_modules/**',
+      preferConst: true,
+      compact: true,
       namedExports: true,
     }),
     replace({

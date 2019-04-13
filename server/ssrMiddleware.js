@@ -1,28 +1,13 @@
 import React from 'react';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
-import { readFileSync } from 'fs';
-const { GraphQLClient } = require('graphql-hooks');
-const memCache = require('graphql-hooks-memcache');
-const fetch = require('isomorphic-fetch');
+import { GraphQLClient } from 'graphql-hooks';
+import memCache from 'graphql-hooks-memcache';
+import fetch from 'isomorphic-fetch';
 
 import { make as App } from '../app/App.bs.js';
+import { getHTML, getQueryParams } from './utils';
 
-const rawHTML = readFileSync(`${__dirname}/../dist/index.html`, 'utf8');
-
-function getQueryParams(req) {
-  let q = req.url.split('?'),
-    result = {};
-  if (q.length >= 2) {
-    q[1].split('&').forEach(item => {
-      try {
-        result[item.split('=')[0]] = item.split('=')[1];
-      } catch (e) {
-        result[item.split('=')[0]] = '';
-      }
-    });
-  }
-  return result;
-}
+const rawHTML = getHTML();
 
 module.exports = async (req, res) => {
   try {
@@ -64,7 +49,10 @@ module.exports = async (req, res) => {
 
     res.setHeader('Content-Type', 'text/html');
 
+    // hydrate react app
     const appString = '<div id="app">';
+
+    // hydrate graphql state
     const scriptString = '<script type="text/javascript"></script>';
 
     const finalHTML = rawHTML
