@@ -31,7 +31,6 @@ First of all make sure you are using node `8.11.3` and latest yarn, you can alwa
 
 ```sh
 $ yarn (install)
-$ yarn pre-build
 $ yarn dev
 ```
 
@@ -44,6 +43,14 @@ $ yarn start
 ```
 
 After doing this, you'll have a server running at [http://localhost:8004](http://localhost:8004)
+
+## If working on the graphql server and want hot reloading
+
+```sh
+$ yarn dev-graphql
+```
+
+After doing this, you'll have a server with hot-reloading running at [http://localhost:3000](http://localhost:3000)
 
 ## When changing the graphql server schema
 
