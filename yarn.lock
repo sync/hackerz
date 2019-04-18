@@ -5761,10 +5761,10 @@ generic-names@^1.0.3:
   dependencies:
     loader-utils "^0.2.16"
 
-gentype@2.21.0:
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.21.0.tgz#7891a4afc4e8afc8f37977b8e89b4c024b0e8b05"
-  integrity sha512-lk4wJoZSeEzuMFw6TfTIbsJQCUhLMoSdjkvu/zTVTQo5uZf7cqkXjXBr5J0dG+Hya25SdEtet0J1/ctLRN5voQ==
+gentype@2.21.1:
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.21.1.tgz#ecfb837189dd242da60c94c5897619b197250413"
+  integrity sha512-McljBLM+qwpaPsD/ysRnP13ASJ578h55JzVqN/mQWwlyV/986ertEwqrpC4yp2sJaIs1w7qgrCYnLuOxBqGkuQ==
 
 get-caller-file@^1.0.1:
   version "1.0.3"
