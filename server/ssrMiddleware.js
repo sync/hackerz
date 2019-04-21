@@ -1,13 +1,14 @@
 import React from 'react';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
-import { GraphQLClient } from 'graphql-hooks';
-import memCache from 'graphql-hooks-memcache';
-import fetch from 'isomorphic-fetch';
+import { readFileSync } from 'fs';
+const { GraphQLClient } = require('graphql-hooks');
+const memCache = require('graphql-hooks-memcache');
+const fetch = require('isomorphic-fetch');
+import { getQueryParams } from './utils';
 
 import { make as App } from '../app/App.bs.js';
-import { getHTML, getQueryParams } from './utils';
 
-const rawHTML = getHTML();
+const rawHTML = readFileSync(`${__dirname}/../dist/index.html`, 'utf8');
 
 module.exports = async (req, res) => {
   try {

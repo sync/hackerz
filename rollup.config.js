@@ -47,7 +47,7 @@ const client = {
   output: {
     dir: pkg.config.publicDir,
     format: 'esm',
-    entryFileNames: production ? 'client-[hash].js' : 'client.js',
+    entryFileNames: 'client.js',
     name: 'client',
     sourcemap: true,
   },
@@ -102,7 +102,7 @@ const legacyClient = {
   output: {
     dir: pkg.config.publicDir,
     format: 'iife',
-    entryFileNames: production ? 'legacy-client-[hash].js' : 'legacy-client.js',
+    entryFileNames: 'legacy-client.js',
     name: 'legacy_client',
     sourcemap: true,
   },
