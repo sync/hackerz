@@ -59,9 +59,9 @@
     "reason-react": "0.7.0"
   },
   "devDependencies": {
-    "@babel/core": "7.4.3",
-    "@babel/polyfill": "7.4.3",
-    "@babel/preset-env": "7.4.3",
+    "@babel/core": "7.4.4",
+    "@babel/polyfill": "7.4.4",
+    "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.0.10",
