@@ -6021,15 +6021,6 @@ fs-extra@^4.0.2:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
-  integrity sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
 fs-extra@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
@@ -11694,12 +11685,12 @@ rollup-plugin-commonjs@9.3.4:
     resolve "^1.10.0"
     rollup-pluginutils "^2.6.0"
 
-rollup-plugin-copy-assets@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-copy-assets/-/rollup-plugin-copy-assets-1.1.0.tgz#017e22bef9a9f6ddc632bae60cd660e0270c7706"
-  integrity sha512-hfBZns2x15XC6N97jhGUiYoNQp1jZ1/mFrM3sbf3GIqGaDEcFPe7+J1H50HIMLG4nVM8YxTJOhMsrXnD4E+2NQ==
+rollup-plugin-copy-assets@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-copy-assets/-/rollup-plugin-copy-assets-2.0.0.tgz#720d9079f0711a9162f2fc1ee34ecf64caffe348"
+  integrity sha512-6aw4Mm691b9NCn0MDEbsD5K03xgnEpEGaJ/OAfYk99/fZ6t8OL9qb/9i824WGruoWeI7dEYDCVJtMaNKy+uCsw==
   dependencies:
-    fs-extra "^5.0.0"
+    fs-extra "^7.0.1"
 
 rollup-plugin-filesize@6.0.1:
   version "6.0.1"
