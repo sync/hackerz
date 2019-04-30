@@ -11685,10 +11685,10 @@ rollup-plugin-commonjs@9.3.4:
     resolve "^1.10.0"
     rollup-pluginutils "^2.6.0"
 
-rollup-plugin-copy-assets@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-copy-assets/-/rollup-plugin-copy-assets-2.0.0.tgz#720d9079f0711a9162f2fc1ee34ecf64caffe348"
-  integrity sha512-6aw4Mm691b9NCn0MDEbsD5K03xgnEpEGaJ/OAfYk99/fZ6t8OL9qb/9i824WGruoWeI7dEYDCVJtMaNKy+uCsw==
+rollup-plugin-copy-assets@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-copy-assets/-/rollup-plugin-copy-assets-2.0.1.tgz#a95956fa504e409d72d2303650ad9e537b65f9b4"
+  integrity sha512-GfSvObeVcCmL1df22JNgdSVDmCP73ackhCfw5xE7sV/tKtdh79nwkwpHJ8JjeeAC5swfnLHHivFb7xPz85n8+g==
   dependencies:
     fs-extra "^7.0.1"
 
