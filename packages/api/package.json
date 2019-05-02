@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "esm": "3.2.22",
-    "micro": "9.3.3",
+    "micro": "9.3.4",
     "micro-dev": "3.0.0"
   }
 }
