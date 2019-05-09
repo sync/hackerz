@@ -9257,10 +9257,10 @@ normalize-url@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
 
-now-lambda-runner@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/now-lambda-runner/-/now-lambda-runner-3.3.0.tgz#a1e56e21a42a34790e8ef2b0154781fb39079c9f"
-  integrity sha512-5vxVlHm1O/17XNJVgf6FvGyQ3yNgpNlvtLy8bJV5K9k6RiOf+Mzpi7F/O9csuOOZrOokaGtmHUNGGaq7D1EEXQ==
+now-lambda-runner@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/now-lambda-runner/-/now-lambda-runner-4.0.0.tgz#3666878e2403c0dec7c910f8ed8e6c0f8bce4221"
+  integrity sha512-ChfpUfGIXJfzYGnn2DCUA2sahoF6LYm5tvp89ADR39Fh7mXMSTKzS6ZPlCA01FGEZSL/711BbzPUJiJ6E501nw==
   dependencies:
     cors "2.8.5"
     extglob "3.0.0"
