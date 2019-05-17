@@ -6180,10 +6180,10 @@ generic-names@^1.0.3:
   dependencies:
     loader-utils "^0.2.16"
 
-gentype@2.23.0:
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.23.0.tgz#871dab29dc39925dfb1b5a94b419f981e6efc6a9"
-  integrity sha512-YbNle0W9ZbOebv1bxS8PSCmu4UvhiiqlE/Rw0Mt1++4pyZl4TfPkmiF2vSN6GRyjRNstrwkg64bSNDad4pYhjQ==
+gentype@2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.24.0.tgz#b76bd385bf8ec8f57244bb28342f6c5b60ddac2f"
+  integrity sha512-y3Nh6DjUCi2puFECvJ8LnAnv+DYo/X78D69pvnCnbwF7DJOBo6CX0tHhc12odBgFgOOzyftiXRz0pzwNHTXiEg==
 
 get-caller-file@^1.0.1:
   version "1.0.3"
