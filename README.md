@@ -60,7 +60,7 @@ $ yarn send-introspection-query http://localhost:8004/api/graphql
 
 ## Run tests and friends
 
-We don't want to use snapshots, we use also use `react-testing-library` to avoid having to use enzyme and to enforce best practices.
+We don't want to use snapshots, we use also use `@testing-library/react` to avoid having to use enzyme and to enforce best practices.
 
 ```sh
 $ yarn lint

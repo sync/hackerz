@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, waitForElement } from 'react-testing-library';
+import { render, fireEvent, waitForElement } from '@testing-library/react';
 import { make as App } from '../app/App.bs';
 import { mockFetchTopStoriesOnce } from './utils/fetchMocks';
 import client from './utils/graphQLClient';

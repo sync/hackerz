@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from 'react-testing-library';
+import { render, fireEvent } from '@testing-library/react';
 import { make as Link } from '../../app/components/Link.bs';
 import * as ReasonReactRouter from 'reason-react/src/ReasonReactRouter.js';
 
