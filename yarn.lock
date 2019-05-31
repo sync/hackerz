@@ -1466,10 +1466,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.2.tgz#63985d3d8b02530e0869962f4da09142ee8e200e"
   integrity sha512-n/VQ4mbfr81aqkx/XmVicOLjviMuy02eenSdJY33SVA7S2J42EU0P1H0mOogfYedb3wXA0d/LVtBrgTSm04WEA==
 
-"@glennsl/bs-json@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@glennsl/bs-json/-/bs-json-3.0.0.tgz#b4e1cf6612270a8dd7287a8a71ebe17e8f0fb683"
-  integrity sha512-slqtGLd/c3yQK9Qfd1gfMB9JCzNU4wzCpVPfO9pXlG64M+te5r30FK++tb3uQEVlVLYtpgZ4wCHtkI8xoshgxQ==
+"@glennsl/bs-json@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@glennsl/bs-json/-/bs-json-4.0.0.tgz#f057d0d1d84d614e27d8bbb67b64e6b6727f24b2"
+  integrity sha512-nunb6+cZcx7pyooh8i4froogXumOOiFb7rF3bz6E9X7b3Dc+3/HGwpnUjxciFN8eQL4QC+MskzG1tG+Ci1aJxA==
 
 "@hapi/address@2.x.x":
   version "2.0.0"
