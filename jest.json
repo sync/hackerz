@@ -3,7 +3,7 @@
   "setupFiles": ["<rootDir>/jest/setup.js"],
   "setupFilesAfterEnv": [
     "jest-dom/extend-expect",
-    "react-testing-library/cleanup-after-each"
+    "@testing-library/react/cleanup-after-each"
   ],
   "modulePaths": ["<rootDir>", "/node_modules/"],
   "moduleFileExtensions": ["js", "jsx"],
