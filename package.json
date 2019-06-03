@@ -69,7 +69,7 @@
     "@storybook/addon-links": "5.0.11",
     "@storybook/addons": "5.0.11",
     "@storybook/react": "5.0.11",
-    "autoprefixer": "9.5.1",
+    "autoprefixer": "9.6.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
     "bs-platform": "5.0.4",
