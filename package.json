@@ -85,7 +85,7 @@
     "jest": "24.8.0",
     "jest-dom": "3.5.0",
     "jest-fetch-mock": "2.1.2",
-    "jest-haste-map": "24.8.0",
+    "jest-haste-map": "24.8.1",
     "jest-resolve": "24.8.0",
     "lint-staged": "8.2.0",
     "now": "15.4.0",
