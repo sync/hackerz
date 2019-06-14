@@ -281,6 +281,6 @@ const api = {
   ],
 };
 
-export default (production
+export default production
   ? [client, legacyClient, ssrMiddleware, api]
-  : [client, ssrMiddleware, api]);
+  : [client, ssrMiddleware, api];
