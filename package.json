@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@glennsl/bs-json": "4.0.0",
-    "bs-fetch": "0.4.0",
+    "bs-fetch": "0.5.0",
     "core-js": "3.1.4",
     "graphql-hooks": "3.5.1",
     "graphql-hooks-memcache": "1.2.0",
