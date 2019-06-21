@@ -1619,10 +1619,10 @@
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#8013f2af54a2b7d735f71560ff360d3a8176a87b"
   integrity sha512-vTCdPp/T/Q3oSqwHmZ5Kpa9oI7iLtGl3RQaA/NyLHikvcrPxACkkKVr/XzkSPJWXHRhKGzVvb0urJsbMlRxi1Q==
 
-"@sindresorhus/fnv1a@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/fnv1a/-/fnv1a-1.1.0.tgz#a5cce7967382753ffd9c954619c287e24b365878"
-  integrity sha512-GL2ifnAImySUpia6imfNVv79QKW9R1bdO51pREbMvBK4EmjnciM460angv3pA4gN1HE1YqJbny/7YF9owIHvMQ==
+"@sindresorhus/fnv1a@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/fnv1a/-/fnv1a-1.2.0.tgz#d554da64c406f3b62ad06dfce9efd537a4a55de4"
+  integrity sha512-5ezb/dBSTWtKQ4sLQwMgOJyREXJcZZkTMbendMwKrXTghUhWjZhstzkkmt4/WkFy/GSTSGzfJOKU7dEXv3C/XQ==
 
 "@storybook/addon-actions@5.1.9":
   version "5.1.9"
@@ -6289,12 +6289,12 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
-graphql-hooks-memcache@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/graphql-hooks-memcache/-/graphql-hooks-memcache-1.2.0.tgz#b13a56441f5e429bb8cd38f2e07c83e1288b718a"
-  integrity sha512-vYB5OokMIJoYKf4/UuA8uwDoN8Hyp15z5KYJclVuXy2Sxufj1uVDQg+DCMpk56y3BbntVuiPZGawbvSDCSeW+w==
+graphql-hooks-memcache@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/graphql-hooks-memcache/-/graphql-hooks-memcache-1.2.1.tgz#2d8ad176d8e8170d6a2e9f5650a58318af781e8a"
+  integrity sha512-1O09yn9UFjq40ceFYL1DLUImUimUxkzCJIamF1MQFX5+o4ZUH/zqNjqZWfbTwHfi9YktvnWiEPKBVXLkXXpPmw==
   dependencies:
-    "@sindresorhus/fnv1a" "^1.0.0"
+    "@sindresorhus/fnv1a" "^1.2.0"
     tiny-lru "^6.0.1"
 
 graphql-hooks@3.6.0:
