@@ -80,7 +80,7 @@
     "eslint-plugin-jest": "22.7.1",
     "gentype": "2.30.0",
     "graphql_ppx": "0.2.8",
-    "husky": "2.4.1",
+    "husky": "2.5.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.8.0",
     "jest-dom": "3.5.0",
