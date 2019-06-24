@@ -78,7 +78,7 @@
     "eslint-config-prettier": "5.0.0",
     "eslint-config-synacor": "3.0.4",
     "eslint-plugin-jest": "22.7.1",
-    "gentype": "2.29.1",
+    "gentype": "2.30.0",
     "graphql_ppx": "0.2.8",
     "husky": "2.4.1",
     "identity-obj-proxy": "3.0.0",
