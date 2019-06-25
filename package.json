@@ -75,7 +75,7 @@
     "bs-platform": "5.0.4",
     "cross-env": "5.2.0",
     "eslint": "6.0.0",
-    "eslint-config-prettier": "5.0.0",
+    "eslint-config-prettier": "5.1.0",
     "eslint-config-synacor": "3.0.4",
     "eslint-plugin-jest": "22.7.1",
     "gentype": "2.30.0",
