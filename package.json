@@ -72,7 +72,7 @@
     "autoprefixer": "9.6.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
-    "bs-platform": "5.0.5",
+    "bs-platform": "6.0.2",
     "cross-env": "5.2.0",
     "eslint": "6.0.1",
     "eslint-config-prettier": "6.0.0",
@@ -113,7 +113,7 @@
     "stylelint-config-standard": "18.3.0"
   },
   "resolutions": {
-    "bs-platform": "5.0.5",
+    "bs-platform": "6.0.2",
     "react": "16.9.0-alpha.0",
     "react-dom": "16.9.0-alpha.0"
   },
