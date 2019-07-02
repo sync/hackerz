@@ -3478,10 +3478,10 @@ bs-fetch@0.5.0:
   resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.5.0.tgz#6913b1d1ddfa0b0a4b832357854e9763d61d4b28"
   integrity sha512-cGjwRpyNcIaX+p2ssy/38zs7BM/miKNgmOR3NEhxKFete5mR05JcvjuV4raG89oGCG281SU1b56TTAKmf9VCug==
 
-bs-platform@5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-5.0.5.tgz#f4e1e9f8f36c1636c41589598fec9d225c756238"
-  integrity sha512-ee/s57uIZBVQyBxbQflGY+9Tbism/x2+oedes/9CSSYVWoeJss7+Q5EGLcMGkmt1puHqagYocg+KrALY3BiTkA==
+bs-platform@6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-6.0.3.tgz#cb401aa4dadbf063dd4a183921195ef3c16d7b11"
+  integrity sha512-zptjWiSaioLVbEq0n3LPwfn1nyY3qt8fXzdI1O+yj6a6sBKmtT2kcx9oXJZl/cuLUnVumXKpb5ksTsYztbJPUg==
 
 bsb-native@4.0.6:
   version "4.0.6"
