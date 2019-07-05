@@ -9417,10 +9417,10 @@ now-lambda-runner@4.0.0:
     named-regexp-groups "^1.0.3"
     yargs "12.0.5"
 
-now@15.6.2:
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/now/-/now-15.6.2.tgz#2baba11392ec5d131465b1f8c0684b35222922bf"
-  integrity sha512-yU7yIcSI6PcMjdjx2M4YtewT0jF3dj6Q1t0qP3c74F+ZjMQwazB0Wq6R+To3qf9Qp4VvRLqY1qGVZXZ6qeVT+Q==
+now@15.7.0:
+  version "15.7.0"
+  resolved "https://registry.yarnpkg.com/now/-/now-15.7.0.tgz#938aa882e0037228616dd248c12296b8d515ccf2"
+  integrity sha512-bvouSBREOd7zbCh2w3h8KPh5+O9Qu8Untbh+qkf/zSb7kslhKjy/CaJtp4/ed4CDxOsKgjrlC0u0BvlnL5IIuQ==
 
 npm-bundled@^1.0.1:
   version "1.0.6"
