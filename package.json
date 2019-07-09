@@ -7,7 +7,7 @@
     ]
   },
   "engines": {
-    "node": "8.x.x"
+    "node": "10.x"
   },
   "config": {
     "publicDir": "dist"
@@ -69,6 +69,8 @@
     "@storybook/addon-links": "5.1.9",
     "@storybook/addons": "5.1.9",
     "@storybook/react": "5.1.9",
+    "@testing-library/jest-dom": "4.0.0",
+    "@testing-library/react": "8.0.4",
     "autoprefixer": "9.6.1",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
@@ -83,7 +85,6 @@
     "husky": "3.0.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.8.0",
-    "jest-dom": "3.5.0",
     "jest-fetch-mock": "2.1.2",
     "jest-haste-map": "24.8.1",
     "jest-resolve": "24.8.0",
@@ -93,7 +94,6 @@
     "npm-run-all": "4.1.5",
     "postcss-modules": "1.4.1",
     "prettier": "1.18.2",
-    "@testing-library/react": "8.0.4",
     "rimraf": "2.6.3",
     "rollup": "1.16.6",
     "rollup-plugin-babel": "4.3.3",
