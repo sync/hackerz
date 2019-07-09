@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:10
 
 LABEL repository="https://github.com/sync/hackerz"
 LABEL homepage="http://github.com/sync"

@@ -2,7 +2,7 @@
   "roots": ["<rootDir>/__tests__"],
   "setupFiles": ["<rootDir>/jest/setup.js"],
   "setupFilesAfterEnv": [
-    "jest-dom/extend-expect",
+    "@testing-library/jest-dom/extend-expect",
     "@testing-library/react/cleanup-after-each"
   ],
   "modulePaths": ["<rootDir>", "/node_modules/"],

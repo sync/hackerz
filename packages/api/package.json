@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "engines": {
-    "node": "8.x.x"
+    "node": "10.x"
   },
   "scripts": {
     "dev": "micro-dev devServer.js"
