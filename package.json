@@ -70,7 +70,7 @@
     "@storybook/addons": "5.1.9",
     "@storybook/react": "5.1.9",
     "@testing-library/jest-dom": "4.0.0",
-    "@testing-library/react": "8.0.5",
+    "@testing-library/react": "8.0.6",
     "autoprefixer": "9.6.1",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
