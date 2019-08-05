@@ -6763,10 +6763,10 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
-graphql-hooks-memcache@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/graphql-hooks-memcache/-/graphql-hooks-memcache-1.2.1.tgz#2d8ad176d8e8170d6a2e9f5650a58318af781e8a"
-  integrity sha512-1O09yn9UFjq40ceFYL1DLUImUimUxkzCJIamF1MQFX5+o4ZUH/zqNjqZWfbTwHfi9YktvnWiEPKBVXLkXXpPmw==
+graphql-hooks-memcache@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/graphql-hooks-memcache/-/graphql-hooks-memcache-1.2.2.tgz#947f095778ba0b11c75a7e60d792b10261fd9a68"
+  integrity sha512-Ry1EZtZQXD9xdHBIaRS4Fuv4mc7PXb2Vufa9+FFzy26bLFVIJWyjv3xrPHcUqrNEBRYhJc/48i9NE5vsgRSTtw==
   dependencies:
     "@sindresorhus/fnv1a" "^1.2.0"
     tiny-lru "^6.0.1"
