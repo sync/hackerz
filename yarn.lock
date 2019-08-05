@@ -5202,6 +5202,11 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
+dequal@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-1.0.0.tgz#41c6065e70de738541c82cdbedea5292277a017e"
+  integrity sha512-/Nd1EQbQbI9UbSHrMiKZjFLrXSnU328iQdZKPQf78XQI6C+gutkFUeoHpG5J08Ioa6HeRbRNFpSIclh1xyG0mw==
+
 des.js@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/des.js/-/des.js-1.0.0.tgz#c074d2e2aa6a8a9a07dbd61f9a15c2cd83ec8ecc"
@@ -6766,11 +6771,12 @@ graphql-hooks-memcache@1.2.1:
     "@sindresorhus/fnv1a" "^1.2.0"
     tiny-lru "^6.0.1"
 
-graphql-hooks@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-3.6.0.tgz#a3dc28d25ffd39ea0282d73e9d73d6e98c7e19c4"
-  integrity sha512-POTpY4Y7rniXtd1lAnii8BRtmKRHlz1VS6J7es+z+oSRCR7usz+VxJl1t7lYhDt9FJOhU9ZWPEVPhCYLK6MCGQ==
+graphql-hooks@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-3.6.1.tgz#0a6f48ca009908cf37cba7b7f8e50bf027482d22"
+  integrity sha512-qn2iKS7qaYFNZSCnWFn/D2RJEfDsmRBq9lTRcCYNuIAujiowJE0JHrla9gg5DJBXObjFCDjwzd92gOQRNW5SIg==
   dependencies:
+    dequal "^1.0.0"
     extract-files "^5.0.1"
 
 graphql-request@1.8.2:
