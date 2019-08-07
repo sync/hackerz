@@ -79,7 +79,7 @@
     "eslint": "6.1.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-config-synacor": "3.0.4",
-    "eslint-plugin-jest": "22.14.1",
+    "eslint-plugin-jest": "22.15.0",
     "gentype": "2.33.0",
     "graphql_ppx": "0.2.8",
     "husky": "3.0.2",
