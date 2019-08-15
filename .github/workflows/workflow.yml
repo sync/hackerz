@@ -1,0 +1,37 @@
+name: Main workflow
+on: [push]
+jobs:
+  build:
+    name: Install, Test, Snapshot, e2e and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Install
+        uses: ./workflows/action-puppeteer/
+        with:
+          args: install
+
+      - name: Test
+        uses: ./workflows/action-puppeteer/
+        with:
+          args: ci
+
+      - name: Snapshot UI
+        uses: ./workflows/action-puppeteer/
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        with:
+          args: snapshot-ui
+
+      - name: End to End
+        uses: ./workflows/action-puppeteer/
+        with:
+          args: e2e
+
+      - name: Deploy
+        uses: ./workflows/action-puppeteer/
+        env:
+          NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
+        with:
+          args: deploy
