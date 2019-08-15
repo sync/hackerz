@@ -39,7 +39,7 @@ var query = Curry._1(GraphqlFuture.Schema[/* query */13], /* :: */[
             Curry._3(GraphqlFuture.Schema[/* Arg */1][/* arg */0], undefined, "id", Curry._1(GraphqlFuture.Schema[/* Arg */1][/* nonnull */7], GraphqlFuture.Schema[/* Arg */1][/* int */3])),
             /* [] */0
           ], (function (_ctx, param, id) {
-              return Curry._2(GraphqlFuture.Future[/* mapOk */10], FutureJs.fromPromise(StoryData$Hackerz.getStory(id), handleJsPromiseError), (function (result) {
+              return Curry._2(GraphqlFuture.Future[/* mapOk */11], FutureJs.fromPromise(StoryData$Hackerz.getStory(id), handleJsPromiseError), (function (result) {
                             return result;
                           }));
             }), "story", storyType),
@@ -48,7 +48,7 @@ var query = Curry._1(GraphqlFuture.Schema[/* query */13], /* :: */[
               Curry._3(GraphqlFuture.Schema[/* Arg */1][/* arg */0], undefined, "page", Curry._1(GraphqlFuture.Schema[/* Arg */1][/* nonnull */7], GraphqlFuture.Schema[/* Arg */1][/* int */3])),
               /* [] */0
             ], (function (_ctx, param, page) {
-                return Curry._2(GraphqlFuture.Future[/* mapOk */10], FutureJs.fromPromise(StoryData$Hackerz.getTopStories(page), handleJsPromiseError), (function (result) {
+                return Curry._2(GraphqlFuture.Future[/* mapOk */11], FutureJs.fromPromise(StoryData$Hackerz.getTopStories(page), handleJsPromiseError), (function (result) {
                               return Belt_List.fromArray(result);
                             }));
               }), "topStories", Curry._1(GraphqlFuture.Schema[/* list */20], Curry._1(GraphqlFuture.Schema[/* nonnull */21], storyType))),
