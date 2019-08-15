@@ -115,7 +115,8 @@
   "resolutions": {
     "bs-platform": "5.0.6",
     "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "brotli-size": "<3.0.0"
   },
   "prettier": {
     "singleQuote": true,
