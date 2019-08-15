@@ -1,10 +1,7 @@
 {
   "roots": ["<rootDir>/__tests__"],
   "setupFiles": ["<rootDir>/jest/setup.js"],
-  "setupFilesAfterEnv": [
-    "@testing-library/jest-dom/extend-expect",
-    "@testing-library/react/cleanup-after-each"
-  ],
+  "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
   "modulePaths": ["<rootDir>", "/node_modules/"],
   "moduleFileExtensions": ["js", "jsx"],
   "moduleNameMapper": {
