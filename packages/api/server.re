@@ -7,14 +7,14 @@ type express;
 [@bs.module "express"] external express: unit => express = "default";
 
 type response;
-[@bs.send] external send: (response, string) => unit = "";
+[@bs.send] external send: (response, string) => unit = "send";
 [@bs.send] external sendJSON: (response, Js.Json.t) => unit = "send";
 
 type request;
 type handler = (request, response) => unit;
-[@bs.send] external use: (express, handler) => unit = "";
-[@bs.send] external get: (express, string, handler) => unit = "";
-[@bs.send] external post: (express, string, handler) => unit = "";
+[@bs.send] external use: (express, handler) => unit = "use";
+[@bs.send] external get: (express, string, handler) => unit = "get";
+[@bs.send] external post: (express, string, handler) => unit = "post";
 
 [@bs.get] [@bs.return null_undefined_to_opt]
 external bodyJSON: request => option(Js.Json.t) = "body";
