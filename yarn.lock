@@ -9065,7 +9065,7 @@ listr@^0.14.3:
     p-map "^2.0.0"
     rxjs "^6.3.3"
 
-livereload@^0.8.0:
+livereload@0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/livereload/-/livereload-0.8.0.tgz#9af99cf8a262152cf7176b320accfc5d2ae4f8bf"
   integrity sha512-Hi5Na6VIK3e8zlgOS50fu+iOTKWj5hM0BE7NKpZkwnfWTnktTjA38ZUXa2NlJww8/GrdVhpnxdqlLad5fkO27g==
@@ -12672,12 +12672,12 @@ rollup-plugin-json@4.0.0:
   dependencies:
     rollup-pluginutils "^2.5.0"
 
-rollup-plugin-livereload@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-livereload/-/rollup-plugin-livereload-1.0.1.tgz#b1df6642d55cafcd87dac54bc4f7a657ab859fdf"
-  integrity sha512-gNuUr+L/8+CR/oKF8ftJNvJEww6iGzNc8+3XcCOvgKWgjhzUBETs8sNONIthcCvVYC2c2PIKMWgQwrYbxRRdwg==
+rollup-plugin-livereload@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-livereload/-/rollup-plugin-livereload-1.0.3.tgz#0a7bb6094032440b8fac43cc8a0e1d54dfe0f1c7"
+  integrity sha512-K626KL5JAF3PGHdcVFHaR+d1w3c4BOzdcJkAnXHCKbL41byLEux/bjaqy1/uNVrpXlxeRPJu4fJfMTl5LHbEpA==
   dependencies:
-    livereload "^0.8.0"
+    livereload "0.8.0"
 
 rollup-plugin-node-resolve@5.2.0:
   version "5.2.0"
