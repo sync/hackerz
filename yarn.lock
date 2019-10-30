@@ -7018,10 +7018,10 @@ generic-names@^1.0.3:
   dependencies:
     loader-utils "^0.2.16"
 
-gentype@2.40.1:
-  version "2.40.1"
-  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.40.1.tgz#28a04e167e5fb1ce4ab1bfbae61ed1ea80dc59a9"
-  integrity sha512-R4lU2KovCyZOiBq1S1/RZG2GRakoMmOutTxBajpNjZeQCpOB4zRAoKTIWx8e3B3u46lHVb/B4d/Vu/9rh6OngQ==
+gentype@2.41.0:
+  version "2.41.0"
+  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.41.0.tgz#91134f99cd7733ba30d5b4a2126090d0fc6c267a"
+  integrity sha512-A2VSceEIas+Sk5Pv5EV3LoomdA4NsZ3ZLBfeOYiSG/IZeIZqjgv5zfDzxU/ZNqud8GULdQl7eTIJXObj3O5lrQ==
 
 get-caller-file@^1.0.1:
   version "1.0.3"
