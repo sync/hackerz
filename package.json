@@ -52,8 +52,8 @@
     "graphql-hooks-memcache": "1.2.2",
     "isomorphic-fetch": "2.2.1",
     "let-anything": "1.0.3",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "reason-future": "2.5.0",
     "reason-graphql": "git://github.com/sync/reason-graphql.git#hack/subs",
     "reason-react": "0.7.0"
@@ -114,8 +114,8 @@
   },
   "resolutions": {
     "bs-platform": "5.2.1",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "brotli-size": "<3.0.0"
   },
   "prettier": {
