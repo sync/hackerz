@@ -23,19 +23,19 @@ function idsArray(json) {
 }
 
 function story(json) {
-  return /* record */[
-          /* by */Json_decode.field("by", Json_decode.string, json),
-          /* descendants */Json_decode.optional((function (param) {
+  return {
+          by: Json_decode.field("by", Json_decode.string, json),
+          descendants: Json_decode.optional((function (param) {
                   return Json_decode.field("descendants", Json_decode.$$int, param);
                 }), json),
-          /* id */Json_decode.field("id", Json_decode.$$int, json),
-          /* score */Json_decode.field("score", Json_decode.$$int, json),
-          /* time */Json_decode.field("time", Json_decode.$$int, json),
-          /* title */Json_decode.field("title", Json_decode.string, json),
-          /* url */Json_decode.optional((function (param) {
+          id: Json_decode.field("id", Json_decode.$$int, json),
+          score: Json_decode.field("score", Json_decode.$$int, json),
+          time: Json_decode.field("time", Json_decode.$$int, json),
+          title: Json_decode.field("title", Json_decode.string, json),
+          url: Json_decode.optional((function (param) {
                   return Json_decode.field("url", Json_decode.string, param);
                 }), json)
-        ];
+        };
 }
 
 function stories(json) {

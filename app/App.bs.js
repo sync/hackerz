@@ -21,15 +21,15 @@ function mapPathToRoute(path) {
 function App(Props) {
   var client = Props.client;
   var serverPath = Props.serverPath;
-  var url = serverPath !== undefined ? ReasonReactRouter.useUrl(/* record */[
-          /* path : :: */[
+  var url = serverPath !== undefined ? ReasonReactRouter.useUrl({
+          path: /* :: */[
             serverPath,
             /* [] */0
           ],
-          /* hash */"",
-          /* search */""
-        ], /* () */0) : ReasonReactRouter.useUrl(undefined, /* () */0);
-  var match = mapPathToRoute(url[/* path */0]);
+          hash: "",
+          search: ""
+        }, /* () */0) : ReasonReactRouter.useUrl(undefined, /* () */0);
+  var match = mapPathToRoute(url.path);
   return React.createElement("div", undefined, React.createElement(GraphqlHooks.ClientContext.Provider, {
                   value: client,
                   children: React.createElement("main", undefined, match ? React.createElement(More$Hackerz.make, { }) : React.createElement(Home$Hackerz.make, { }))

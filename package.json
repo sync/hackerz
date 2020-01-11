@@ -42,20 +42,21 @@
     "storybook:reason": "yarn dev:reason",
     "storybook:start": "start-storybook -p 6006",
     "build-storybook": "yarn build:reason && build-storybook",
-    "snapshot-ui": "build-storybook && percy-storybook --widths=320,1280"
+    "snapshot-ui": "build-storybook && percy-storybook --widths=320,1280",
+    "update-schema": "get-graphql-schema http://localhost:3000/api/graphql -j > graphql_schema.json"
   },
   "dependencies": {
     "@glennsl/bs-json": "5.0.1",
     "bs-fetch": "0.5.0",
+    "bs-let": "0.1.11",
     "core-js": "3.6.3",
     "graphql-hooks": "3.6.1",
     "graphql-hooks-memcache": "1.3.0",
     "isomorphic-fetch": "2.2.1",
-    "let-anything": "1.0.3",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "reason-future": "2.5.0",
-    "reason-graphql": "git://github.com/sync/reason-graphql.git#hack/subs",
+    "reason-graphql": "0.6.1",
     "reason-react": "0.7.0"
   },
   "devDependencies": {
@@ -63,6 +64,7 @@
     "@babel/polyfill": "7.7.0",
     "@babel/preset-env": "7.7.7",
     "@babel/preset-react": "7.7.4",
+    "@baransu/graphql_ppx_re": "0.4.9",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.2.8",
     "@storybook/addon-centered": "5.2.8",
@@ -74,14 +76,14 @@
     "autoprefixer": "9.7.3",
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
-    "bs-platform": "5.2.1",
+    "bs-platform": "7.0.1",
     "cross-env": "6.0.3",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-synacor": "3.0.5",
     "eslint-plugin-jest": "23.4.0",
-    "gentype": "2.41.0",
-    "graphql_ppx": "0.2.8",
+    "gentype": "3.9.1",
+    "get-graphql-schema": "2.1.2",
     "husky": "4.0.6",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
@@ -111,12 +113,6 @@
     "stylelint": "12.0.1",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-standard": "19.0.0"
-  },
-  "resolutions": {
-    "bs-platform": "5.2.1",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "brotli-size": "<3.0.0"
   },
   "prettier": {
     "singleQuote": true,
