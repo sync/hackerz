@@ -4,7 +4,7 @@
     "react-jsx": 3
   },
   "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
-  "ppx-flags": ["graphql_ppx/ppx", "let-anything/ppx"],
+  "ppx-flags": ["@baransu/graphql_ppx_re/ppx6", "bs-let/ppx"],
   "namespace": true,
   "bs-dependencies": [
     "reason-react",

@@ -26,6 +26,7 @@ describe('Home', () => {
     expect(getByText('See some more')).toBeTruthy();
   });
 
+  // eslint-disable-next-line jest/expect-expect
   test('To successfully render no top stories', async () => {
     mockFetchTopStoriesOnce(0, null);
 
@@ -34,6 +35,7 @@ describe('Home', () => {
     await waitForElement(() => getByText('No stories found'));
   });
 
+  // eslint-disable-next-line jest/expect-expect
   test('To error when fetching top stories', async () => {
     const errorMessage = mockFetchErrorResponseOnce();
 
