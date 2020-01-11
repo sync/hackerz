@@ -4,7 +4,7 @@ external registerServiceWorker: unit => unit = "register";
 registerServiceWorker();
 
 [@bs.val] [@bs.scope "window"]
-external initialState: Js.Json.t = "__INITIAL_STATE__";
+external initialState: GraphqlHooks.MemCache.config = "__INITIAL_STATE__";
 
 let url = "/api/graphql";
 let cache = GraphqlHooks.createMemCache(~initialState);
