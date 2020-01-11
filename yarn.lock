@@ -774,10 +774,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@baransu/graphql_ppx_re@0.4.9":
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/@baransu/graphql_ppx_re/-/graphql_ppx_re-0.4.9.tgz#8cdc034d6c5c9829d296f8bfe636da91dc03b968"
-  integrity sha512-FQnStD9Pr+MCVkQdpY7+qVaJuhifzCvcYAzL7KlV0zWS6PIvZTY8M1Dllns1adBAuaGL+RBIwXMHnV2UKwCPcw==
+"@baransu/graphql_ppx_re@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@baransu/graphql_ppx_re/-/graphql_ppx_re-0.5.0.tgz#147486c1d1252555e78b89d45f685b48cc293617"
+  integrity sha512-a0iDo4ewC74cqowkxuPcAhUeJ4AQmjKWW0EtnZ2QG/doqsfObOc43bAfGPPQHG2pdtGCY5MwtqbNOVH+5EHkMA==
 
 "@chromaui/localtunnel@1.10.1":
   version "1.10.1"
