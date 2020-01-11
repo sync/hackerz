@@ -14,7 +14,7 @@ import * as Graphql_Language_Parser from "reason-graphql/src/language/Graphql_La
 
 var app = Express.default();
 
-var BodyParser$1 = /* module */[];
+var BodyParser$1 = { };
 
 app.use(BodyParser.json());
 
@@ -25,13 +25,13 @@ function getQueryString(json) {
 }
 
 function executeGraphqlQuery(query) {
-  return Curry._1(GraphqlFuture.Schema[/* resultToJson */45], Curry._4(GraphqlFuture.Schema[/* execute */44], undefined, Belt_Result.getExn(Graphql_Language_Parser.parse(query)), GraphqlSchema$Hackerz.schema, /* () */0));
+  return Curry._1(GraphqlFuture.Schema.resultToJson, Curry._4(GraphqlFuture.Schema.execute, undefined, Belt_Result.getExn(Graphql_Language_Parser.parse(query)), GraphqlSchema$Hackerz.schema, /* () */0));
 }
 
 function graphqlHandler(req, res) {
   var queryString = getQueryString(Caml_option.nullable_to_opt(req.body));
   if (queryString !== undefined) {
-    Curry._2(GraphqlFuture.Schema[/* Io */0][/* map */4], executeGraphqlQuery(queryString), (function (jsonResult) {
+    Curry._2(GraphqlFuture.Schema.Io.map, executeGraphqlQuery(queryString), (function (jsonResult) {
             res.send(jsonResult);
             return /* () */0;
           }));

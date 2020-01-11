@@ -42,11 +42,11 @@ function stories(json) {
   return Json_decode.array(story, json);
 }
 
-var Decode = /* module */[
-  /* idsArray */idsArray,
-  /* story */story,
-  /* stories */stories
-];
+var Decode = {
+  idsArray: idsArray,
+  story: story,
+  stories: stories
+};
 
 function getStory(id) {
   return fetch(storyUrl(id)).then((function (prim) {

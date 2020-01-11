@@ -7,31 +7,47 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: Install
-        uses: ./workflows/action-puppeteer/
+      - name: Setup node
+        uses: actions/setup-node@v1
         with:
-          args: install
+          node-version: '12.x'
+
+      - name: Setup puppeteer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg --no-install-recommends 
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+          sudo apt-get update
+          sudo apt-get -y install procps google-chrome-unstable --no-install-recommends
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache Yarn
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install
+        run: yarn install
 
       - name: Test
-        uses: ./workflows/action-puppeteer/
-        with:
-          args: ci
+        run: yarn ci
 
       - name: Snapshot UI
-        uses: ./workflows/action-puppeteer/
+        run: yarn snapshot-ui
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        with:
-          args: snapshot-ui
 
       - name: End to End
-        uses: ./workflows/action-puppeteer/
-        with:
-          args: e2e
+        run: yarn e2e
 
       - name: Deploy
-        uses: ./workflows/action-puppeteer/
+        run: yarn deploy
         env:
           NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
-        with:
-          args: deploy

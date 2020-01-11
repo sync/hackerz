@@ -7,7 +7,7 @@
     ]
   },
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "config": {
     "publicDir": "dist"
@@ -80,7 +80,7 @@
     "eslint-config-prettier": "6.9.0",
     "eslint-config-synacor": "3.0.5",
     "eslint-plugin-jest": "23.3.0",
-    "gentype": "3.9.1",
+    "gentype": "2.41.0",
     "graphql_ppx": "0.2.8",
     "husky": "4.0.1",
     "identity-obj-proxy": "3.0.0",

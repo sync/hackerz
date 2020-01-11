@@ -89,20 +89,20 @@ function makeWithVariables(param) {
 }
 
 function ret_type(f) {
-  return /* module */[];
+  return { };
 }
 
-var MT_Ret = /* module */[];
+var MT_Ret = { };
 
-var TopStoriesQuery = /* module */[
-  /* ppx_printed_query */ppx_printed_query,
-  /* query */ppx_printed_query,
-  /* parse */parse,
-  /* make */make,
-  /* makeWithVariables */makeWithVariables,
-  /* ret_type */ret_type,
-  /* MT_Ret */MT_Ret
-];
+var TopStoriesQuery = {
+  ppx_printed_query: ppx_printed_query,
+  query: ppx_printed_query,
+  parse: parse,
+  make: make,
+  makeWithVariables: makeWithVariables,
+  ret_type: ret_type,
+  MT_Ret: MT_Ret
+};
 
 var query = make(/* () */0);
 
