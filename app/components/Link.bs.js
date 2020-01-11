@@ -1,6 +1,7 @@
 
 
 import * as React from "react";
+import * as ReasonReact from "reason-react/src/ReasonReact.js";
 import * as ReasonReactRouter from "reason-react/src/ReasonReactRouter.js";
 
 function handleClick(href, $$event) {

@@ -6,7 +6,7 @@ import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
 import * as GraphqlHooks from "graphql-hooks";
 import * as GraphqlHooksMemcache from "graphql-hooks-memcache";
 
-var MemCache = /* module */[];
+var MemCache = { };
 
 function createMemCache(initialState) {
   return GraphqlHooksMemcache.default({
@@ -14,7 +14,7 @@ function createMemCache(initialState) {
             });
 }
 
-var Client = /* module */[];
+var Client = { };
 
 function createClient(url, cache) {
   return new GraphqlHooks.GraphQLClient({
@@ -25,7 +25,9 @@ function createClient(url, cache) {
 
 var provider = GraphqlHooks.ClientContext.Provider;
 
-var Provider = /* module */[/* provider */provider];
+var Provider = {
+  provider: provider
+};
 
 function useQuery(query) {
   var result = GraphqlHooks.useQuery(query.query);
