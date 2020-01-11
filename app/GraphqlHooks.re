@@ -1,7 +1,6 @@
 module MemCache = {
   type t;
 
-  [@bs.deriving abstract]
   type config = {initialState: Js.Json.t};
 
   type conf = Js.Json.t;
@@ -11,14 +10,15 @@ module MemCache = {
 };
 
 let createMemCache = (~initialState) => {
-  let config = MemCache.config(~initialState);
+  let config = {
+    initialState;
+  };
   MemCache._createMemCache(config);
 };
 
 module Client = {
   type t;
 
-  [@bs.deriving abstract]
   type config = {
     url: string,
     cache: MemCache.t,
@@ -29,7 +29,8 @@ module Client = {
 };
 
 let createClient = (~url: string, ~cache: MemCache.t) => {
-  let config = Client.config(~url, ~cache);
+  open Client;
+  let config = {url, cache};
   Client._createClient(config);
 };
 
@@ -44,24 +45,25 @@ module Provider = {
     "Provider";
 };
 
-[@bs.deriving abstract]
 type error = {message: string};
 
-[@bs.deriving abstract]
 type httpError = {
   status: int,
   statusText: string,
   body: string,
 };
 
-[@bs.deriving abstract]
+type clientRequestError = {
+  fetchError: option(error),
+  httpError: option(httpError),
+  graphQLErrors: option(array(error)),
+};
+
 type clientRequestResult('any) = {
   loading: bool,
   cacheHit: bool,
-  error: bool,
+  error: option(clientRequestError),
   data: 'any,
-  fetchError: option(error),
-  httpError: option(httpError),
 };
 
 type queryResponse('a) =
@@ -72,20 +74,30 @@ type queryResponse('a) =
 [@bs.module "graphql-hooks"]
 external _useQuery: string => clientRequestResult('any) = "useQuery";
 
+let extractErrorMessage = (~clientRequestError) => {
+  switch (clientRequestError) {
+  | Some({fetchError: Some(fetchError), _}) => Some(fetchError.message)
+  | Some({httpError: Some(httpError), _}) => Some(httpError.body)
+  | Some({graphQLErrors: Some(graphQLErrors), _}) =>
+    graphQLErrors
+    ->Belt.Array.reduce("", (currentMsg, error) =>
+        currentMsg ++ ", " ++ error.message
+      )
+    ->Some
+  | _ => None
+  };
+};
+
 let useQuery = (~query) => {
   let result = _useQuery(query##query);
   switch (
-    result->loadingGet,
-    result->errorGet,
-    result->dataGet,
-    result->fetchErrorGet,
-    result->httpErrorGet,
+    result.loading,
+    extractErrorMessage(~clientRequestError=result.error),
+    result.data,
   ) {
-  | (true, _, _, _, _) => Loading
-  | (false, false, Some(response), _, _) => Data(response |> query##parse)
-  | (false, true, None, Some(fetchError), None) =>
-    Error(fetchError->messageGet)
-  | (false, true, None, None, Some(httpError)) => Error(httpError->bodyGet)
+  | (true, _, _) => Loading
+  | (false, None, Some(response)) => Data(response |> query##parse)
+  | (false, Some(message), None) => Error(message)
   | _ => Error("Something went wrong")
   };
 };

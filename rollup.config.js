@@ -22,6 +22,7 @@ const namedExports = {
     'Fragment',
     'useState',
     'useEffect',
+    'useContext',
     'useLayoutEffect',
     'useMemo',
     'useRef',
