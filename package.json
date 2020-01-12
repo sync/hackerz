@@ -60,10 +60,10 @@
     "reason-react": "0.7.0"
   },
   "devDependencies": {
-    "@babel/core": "7.7.7",
-    "@babel/polyfill": "7.7.0",
-    "@babel/preset-env": "7.7.7",
-    "@babel/preset-react": "7.7.4",
+    "@babel/core": "7.8.0",
+    "@babel/polyfill": "7.8.0",
+    "@babel/preset-env": "7.8.0",
+    "@babel/preset-react": "7.8.0",
     "@baransu/graphql_ppx_re": "0.5.0",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.3.0",
