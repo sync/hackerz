@@ -3943,7 +3943,12 @@ bs-fetch@0.5.0:
   resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.5.0.tgz#6913b1d1ddfa0b0a4b832357854e9763d61d4b28"
   integrity sha512-cGjwRpyNcIaX+p2ssy/38zs7BM/miKNgmOR3NEhxKFete5mR05JcvjuV4raG89oGCG281SU1b56TTAKmf9VCug==
 
-bs-let@0.1.11, bs-let@^0.1.11:
+bs-let@0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/bs-let/-/bs-let-0.1.13.tgz#0d296780790ac987a98b3d4809a7bb99bd0d7098"
+  integrity sha512-l2bbD8iTWLnigOJOuSk7TlFjCARPJ2tPJfUuZolapslhrvjbMjLMvf2aWItmaBR+P2Sur1uBkgeX5330hoF+Qw==
+
+bs-let@^0.1.11:
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/bs-let/-/bs-let-0.1.11.tgz#159d0194c890be29d47d54db6f015c881e3269db"
   integrity sha512-Zp5wMGEmdTyabiLhNvt1rUQQ5zL2T5z6uj4v6WEIU+K+tseljqrpEz9Dlp5YbF1uePVsXeatmkkhb5xKtvEOPw==
