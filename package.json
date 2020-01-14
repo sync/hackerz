@@ -73,7 +73,7 @@
     "@storybook/react": "5.3.3",
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.4.0",
-    "autoprefixer": "9.7.3",
+    "autoprefixer": "9.7.4",
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
     "bs-platform": "7.0.1",
