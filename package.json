@@ -84,7 +84,7 @@
     "eslint-plugin-jest": "23.6.0",
     "gentype": "3.10.0",
     "get-graphql-schema": "2.1.2",
-    "husky": "4.0.9",
+    "husky": "4.0.10",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
     "jest-fetch-mock": "3.0.1",
