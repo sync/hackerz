@@ -6077,10 +6077,10 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-extract-files@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-6.0.0.tgz#a273fd666aac97fd32e788b62d72d978bf43bb71"
-  integrity sha512-v9UVTPkERZR1NjEOIPvmbzLFdh8YZFEGjRdSJraop6HJe9PQ8HU9iv6eRMuF06CXXXO/R5OBmnWMixZHuZ8CsA==
+extract-files@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-7.0.0.tgz#3dc7853320ff7876ec62d6e98f2f4e6f3e6282f6"
+  integrity sha512-3AUlT7TD+DbQXNe3t70QrgJU6Wgcp7rk1Zm0vqWz8OYnw4vxihgG0TgZ2SIGrVqScc4WfOu7B4a0BezGJ0YqvQ==
 
 extract-zip@^1.6.6:
   version "1.6.7"
@@ -6869,13 +6869,13 @@ graphql-hooks-memcache@1.3.0:
     "@sindresorhus/fnv1a" "^1.2.0"
     tiny-lru "^7.0.0"
 
-graphql-hooks@4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-4.3.0.tgz#1814f9f09697a8ddff753f27fb5586caf08022ce"
-  integrity sha512-mjES4pH5g+4kvhmvbKXkOkYclObDRr2/4s1Pc+x79nOeom8pOeUDoDIkjA5SLJbv4K5215/dPpOG8uPjzFqqNw==
+graphql-hooks@4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-4.4.0.tgz#95a216a0ffd43283041de003cc87628d5ca65d18"
+  integrity sha512-Of8MntBkQ01hy5SYz5ep8a4hQiSCiaMHavsEcWIeHIIrkC3YoGlxm9xxjrwHKb70tcvCskAqD5We6sAUpANtlw==
   dependencies:
     dequal "^1.0.0"
-    extract-files "^6.0.0"
+    extract-files "^7.0.0"
 
 graphql-request@1.8.2:
   version "1.8.2"
