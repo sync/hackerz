@@ -71,7 +71,7 @@
     "@storybook/addon-links": "5.3.8",
     "@storybook/addons": "5.3.8",
     "@storybook/react": "5.3.8",
-    "@testing-library/jest-dom": "5.0.0",
+    "@testing-library/jest-dom": "5.0.1",
     "@testing-library/react": "9.4.0",
     "autoprefixer": "9.7.4",
     "babel-jest": "25.1.0",
