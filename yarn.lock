@@ -4072,10 +4072,10 @@ browserslist@^4.8.5:
     electron-to-chromium "^1.3.341"
     node-releases "^1.1.47"
 
-bs-fetch@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.5.1.tgz#5dc63c2d92a30a702c5d9fc7ac875199dc42b01e"
-  integrity sha512-Pqmj4fwm9vyWHF1XjkrAYz0O0DJ1vlOpVVJLhW49FSBqbnUCFZq27l/1DToSb+VMaTv0F7gAlrIKTeuIC01yWg==
+bs-fetch@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.5.2.tgz#a9f4582ddb1414d3467b900305c738813481988c"
+  integrity sha512-CYweTJcgLeLOqzR3vNsB+NmyEFhWThnPNdZmmF28nkFmo0CQEf+20eSHZJDO6EuAhhoRqJ0qp2VgxtH6zBB5xA==
 
 bs-let@0.1.16:
   version "0.1.16"
