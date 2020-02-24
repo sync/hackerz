@@ -64,7 +64,7 @@
     "@babel/polyfill": "7.8.3",
     "@babel/preset-env": "7.8.4",
     "@babel/preset-react": "7.8.3",
-    "@baransu/graphql_ppx_re": "0.6.4",
+    "@baransu/graphql_ppx_re": "0.7.1",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "5.3.13",
     "@storybook/addon-centered": "5.3.13",
