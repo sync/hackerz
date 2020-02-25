@@ -7063,10 +7063,10 @@ graphql-hooks-memcache@1.3.1:
     "@sindresorhus/fnv1a" "^1.2.0"
     tiny-lru "^7.0.0"
 
-graphql-hooks@4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-4.4.2.tgz#023fd7940144e65a9ea3fd2fd684ff28bfc6182c"
-  integrity sha512-uMaE5i9ZH4NO/NSs3e+3W/LvR31hWbqoXf+D/b6NUj3B7M2J8DFrrT2fgwq67Aflrmt6rvr8zQl5OVUgHxzG9Q==
+graphql-hooks@4.4.3:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/graphql-hooks/-/graphql-hooks-4.4.3.tgz#a526b6b5ece4fd2226eec888eae4131936067838"
+  integrity sha512-fuHCH+r1o/GAPZqwxTvckJp4Te84m3VvKGZaY1l/T3HXDSTrkd+T3VTCNC1lt3Dq/n27y79nWiJdMGqMyrt+wg==
   dependencies:
     dequal "^1.0.0"
     extract-files "^7.0.0"
