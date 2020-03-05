@@ -77,7 +77,7 @@
     "babel-jest": "25.1.0",
     "babel-loader": "8.0.6",
     "bs-platform": "7.1.1",
-    "cross-env": "7.0.1",
+    "cross-env": "7.0.2",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-config-synacor": "3.0.5",
