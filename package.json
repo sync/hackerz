@@ -97,7 +97,7 @@
     "postcss-modules": "1.5.0",
     "prettier": "1.19.1",
     "rimraf": "3.0.2",
-    "rollup": "2.0.1",
+    "rollup": "2.0.2",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-copy-assets": "2.0.1",
