@@ -62,7 +62,7 @@
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/polyfill": "7.8.7",
-    "@babel/preset-env": "7.9.0",
+    "@babel/preset-env": "7.9.5",
     "@babel/preset-react": "7.9.4",
     "@baransu/graphql_ppx_re": "0.7.1",
     "@percy-io/percy-storybook": "2.1.0",
