@@ -49,7 +49,7 @@
     "@glennsl/bs-json": "5.0.2",
     "bs-fetch": "0.5.2",
     "bs-let": "0.1.16",
-    "core-js": "3.6.4",
+    "core-js": "3.6.5",
     "graphql-hooks": "4.4.4",
     "graphql-hooks-memcache": "1.3.2",
     "isomorphic-fetch": "2.2.1",
