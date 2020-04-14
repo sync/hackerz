@@ -76,7 +76,7 @@
     "autoprefixer": "9.7.6",
     "babel-jest": "25.3.0",
     "babel-loader": "8.1.0",
-    "bs-platform": "7.2.2",
+    "bs-platform": "7.3.1",
     "cross-env": "7.0.2",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
