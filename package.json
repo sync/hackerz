@@ -57,7 +57,7 @@
     "react-dom": "16.12.0",
     "reason-future": "2.5.0",
     "reason-graphql": "0.6.1",
-    "reason-react": "0.7.0"
+    "reason-react": "0.7.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
