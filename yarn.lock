@@ -12893,10 +12893,10 @@ rollup-plugin-node-resolve@5.2.0:
     resolve "^1.11.1"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-postcss@2.8.2:
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-2.8.2.tgz#6408bd9301edc8bc495ce0c9547acb339010a845"
-  integrity sha512-IZkOIlzWJLmMUS6EDbjUYZEwdhukdcM+39rmXKVl/WQ2rnMpQxF3ByDUzq9zYok6weT7rteuzVkV5nWjnrZrtw==
+rollup-plugin-postcss@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-3.0.0.tgz#988d6b54653ab6e67a254c3b6f34181205fdd51a"
+  integrity sha512-KGLKCKs1GTTuFoOyhH74VoJGPg2sFLBpMctoakLg8pL4ni2unh733AlC3+05Dt7qIllbvNbSoqKcmqjqb1Eb7g==
   dependencies:
     chalk "^4.0.0"
     concat-with-sourcemaps "^1.1.0"
