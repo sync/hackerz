@@ -86,7 +86,7 @@
     "get-graphql-schema": "2.1.2",
     "husky": "4.2.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "25.5.3",
+    "jest": "25.5.4",
     "jest-fetch-mock": "3.0.3",
     "jest-haste-map": "25.5.1",
     "jest-resolve": "25.5.1",
