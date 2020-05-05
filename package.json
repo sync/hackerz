@@ -53,8 +53,8 @@
     "graphql-hooks": "4.4.4",
     "graphql-hooks-memcache": "1.3.2",
     "isomorphic-fetch": "2.2.1",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "reason-future": "2.5.0",
     "reason-graphql": "0.6.1",
     "reason-react": "0.8.0"
