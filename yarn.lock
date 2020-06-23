@@ -12209,10 +12209,10 @@ postcss-modules-values@^3.0.0:
     icss-utils "^4.0.0"
     postcss "^7.0.6"
 
-postcss-modules@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-modules/-/postcss-modules-3.0.0.tgz#d639e5ede9435915c21117c4cbd7bf9902858ca0"
-  integrity sha512-sSY1DL+kG60m0ZtD4iSLmOs4m+BRBS/ZdBlSqETk9uw+drCrqBp22Yw/5XFYWhhaK1YYWNNAZPBn3mK1F5xyRQ==
+postcss-modules@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules/-/postcss-modules-3.1.0.tgz#2f1b73a6e578e541d7bd0d97e1a6381b9e63de8c"
+  integrity sha512-syZWoIphR0Zg3St8q7zEkEravVIapJlZEafQTSFSiHudwaJfhxgT/8v78xYu3WVNU+bU6DJDvQ1bBGQCi/9Hwg==
   dependencies:
     generic-names "^2.0.1"
     icss-replace-symbols "^1.1.0"
