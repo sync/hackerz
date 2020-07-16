@@ -4763,10 +4763,10 @@ browserslist@^4.12.0:
     node-releases "^1.1.53"
     pkg-up "^2.0.0"
 
-bs-fetch@0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.6.1.tgz#f25c4690d1976c07dfb0b6f72753271cbbabcc33"
-  integrity sha512-meXUuqTu6quq0X7dW7DmxW8RGiKiONW3n1A9wgXx0KcWHSZuq/PA6C1NoByDiUA5VeE8tYGZ7YXh/uVAl+8pDQ==
+bs-fetch@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.6.2.tgz#37d982e9f79b9bc44c23e87ae78ccbee1f869adf"
+  integrity sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg==
 
 bs-let@0.1.16:
   version "0.1.16"
