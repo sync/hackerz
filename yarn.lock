@@ -7771,10 +7771,10 @@ gensync@^1.0.0-beta.1:
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
   integrity sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
 
-gentype@3.27.0:
-  version "3.27.0"
-  resolved "https://registry.yarnpkg.com/gentype/-/gentype-3.27.0.tgz#407aad74af94cf455bf471dedd32499aa27095ff"
-  integrity sha512-bHZ6R+FHecYynjC4JPKpUo4nqVxNJZCfeGggGVDXmlgZY+JPfcI//fOB5llD2o+++Srl2xrflOdqyfqg0hlXPw==
+gentype@3.28.0:
+  version "3.28.0"
+  resolved "https://registry.yarnpkg.com/gentype/-/gentype-3.28.0.tgz#d3409f7f0dd0f8cf083ac426019893a743b7518d"
+  integrity sha512-MFgjor9OxaT+uLQP8IUoweYu+J95hXUJG/EgkksFpuMPMEYKr00DhvYTbIAka26S+2n1poTCFTdV+6HH0l4a1w==
 
 get-caller-file@^1.0.1:
   version "1.0.3"
