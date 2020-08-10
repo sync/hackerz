@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "graphql-request": "3.0.0",
-    "jest": "26.2.2",
+    "jest": "26.3.0",
     "jest-puppeteer": "4.4.0",
     "puppeteer": "5.2.1"
   },
