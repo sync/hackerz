@@ -55,7 +55,7 @@
     "isomorphic-fetch": "2.2.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "reason-future": "2.5.0",
+    "reason-future": "2.6.0",
     "reason-graphql": "0.6.1",
     "reason-react": "0.8.0"
   },
