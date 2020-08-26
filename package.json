@@ -67,7 +67,7 @@
     "@baransu/graphql_ppx_re": "0.7.1",
     "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-actions": "6.0.18",
-    "@storybook/addon-centered": "5.3.19",
+    "@storybook/addon-centered": "5.3.20",
     "@storybook/addon-links": "6.0.18",
     "@storybook/addons": "6.0.18",
     "@storybook/react": "6.0.18",
