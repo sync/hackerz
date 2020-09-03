@@ -60,7 +60,7 @@
     "reason-react": "0.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.11.5",
+    "@babel/core": "7.11.6",
     "@babel/polyfill": "7.11.5",
     "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.10.4",
