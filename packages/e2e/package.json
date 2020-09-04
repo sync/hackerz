@@ -9,7 +9,7 @@
     "start": "yarn --cwd ../../ now-lambda"
   },
   "devDependencies": {
-    "graphql-request": "3.0.0",
+    "graphql-request": "3.1.0",
     "jest": "26.4.2",
     "jest-puppeteer": "4.4.0",
     "puppeteer": "5.2.1"
