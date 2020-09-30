@@ -50,7 +50,7 @@
     "bs-fetch": "0.6.1",
     "bs-let": "0.1.16",
     "core-js": "3.6.5",
-    "graphql-hooks": "4.5.0",
+    "graphql-hooks": "5.0.0",
     "graphql-hooks-memcache": "1.3.3",
     "isomorphic-fetch": "3.0.0",
     "react": "16.13.1",
